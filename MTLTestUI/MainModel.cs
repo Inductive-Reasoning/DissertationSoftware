@@ -81,7 +81,7 @@ namespace MTLTestUI
             {
                 Properties = new Dictionary<string, double> {
                 { "mu_r", 1.0 },
-                { "epsr", tfmr.eps_oil },
+                { "epsr", tfmr.InsulatingFluid.eps_r },
                 { "loss_tan", tfmr.ins_loss_factor } }
             };
 
@@ -89,7 +89,7 @@ namespace MTLTestUI
             {
                 Properties = new Dictionary<string, double> {
                 { "mu_r", 1.0 },
-                { "epsr", tfmr.Windings[0].Segments[0].Geometry.ConductorType.eps_paper },
+                { "epsr", tfmr.Windings[0].Segments[0].Geometry.ConductorType.InsulationMaterial.eps_r },
                 { "loss_tan", tfmr.ins_loss_factor } }
             };
 

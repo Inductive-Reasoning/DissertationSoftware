@@ -1,9 +1,4 @@
-﻿using TfmrLib;
-using GeometryLib;
-using MathNet.Numerics.Data.Text;
-using MathNet.Numerics.LinearAlgebra;
-
-namespace DissertationSoftware.Tests;
+﻿namespace DissertationSoftware.Tests;
 
 public class UnitTest1
 {
@@ -32,7 +27,7 @@ public class UnitTest1
                         new WindingSegment
                         {
                             Label = "Segment 1",
-                            Geometry = new DiscWindingGeometry
+                            Geometry = new DiscSegmentGeometry
                             {
                                 ConductorType = new RectConductor
                                 {
@@ -62,7 +57,7 @@ public class UnitTest1
                         new WindingSegment
                         {
                             Label = "Segment 1",
-                            Geometry = new DiscWindingGeometry
+                            Geometry = new DiscSegmentGeometry
                             {
                                 ConductorType = new RectConductor
                                 {
@@ -184,7 +179,7 @@ public class UnitTest1
         {
             for (int j = 0; j < C.ColumnCount; j++)
             {
-               C_PUL[i, j] = C[i, j] / turn_lengths[i];
+                C_PUL[i, j] = C[i, j] / turn_lengths[i];
             }
         }
         Console.WriteLine("Capacitance per unit length (pF/m) calculated manually:");
