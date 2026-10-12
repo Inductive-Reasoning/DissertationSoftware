@@ -458,3 +458,13 @@ LCCalc/case.geo
 .gitignore
 LCCalc/Results/
 LCCalc/case.msh
+LCCalc/capacitance_matrix.csv
+LCCalc/Cmatrix.h5
+LCCalc/Cmatrix.json
+LCCalc/coupling_magnetoquasistatics.h5
+.gitignore
+LCCalc/Lmatrix.h5
+LCCalc/Lmatrix.json
+LCCalc/mfem-electromag
+MTLTestApp/PULImpedances/Cmatrix.h5
+MTLTestApp/PULImpedances/Lmatrix.h5
